@@ -1,0 +1,28 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Debug Chunk Loader",
+			"program": "${workspaceFolder}\\bin\\index.js",
+			"args": [
+				"http://f39bf6aa.bwtest-aws.pravala.com/384MB.jar",
+				"-chunkCount",
+				"4",
+				"-totalDownload",
+				"5000",
+				/*"-chunkSize",
+				"1024",*/
+				"-outputFile",
+				"384MB.jar",
+			],
+			"outFiles": [
+				"${workspaceFolder}/**/*.js"
+			]
+		}
+	]
+}
